@@ -110,7 +110,5 @@ public class SeleniumLocators {
 		WebElement submitButton = driver.findElement(By.xpath("//input[@name='submit']"));
 		submitButton.click();
 		Thread.sleep(4000);		
-
 	}
-	
 }
