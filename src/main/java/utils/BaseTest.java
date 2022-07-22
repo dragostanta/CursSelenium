@@ -9,7 +9,9 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
+	public BasePage page;
+	
 	
 	@BeforeClass
 	public void setUp() {	
@@ -19,6 +21,7 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://keybooks.ro/");
 		//driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+		page = new BasePage();
 	}
 
 	@AfterClass
