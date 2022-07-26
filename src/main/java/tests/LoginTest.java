@@ -11,7 +11,7 @@ import utils.BaseTest;
 public class LoginTest extends BaseTest {
 
 	
-	@Test(priority=0)
+	//@Test(priority=0)
 	public void validLogin() throws InterruptedException {
 
 		page.navMenu.navigateTo(page.navMenu.loginLink);
@@ -21,7 +21,7 @@ public class LoginTest extends BaseTest {
 
 	}
 	
-	@Test(priority =1)
+	//@Test(priority =1)
 	public void invalidTest() {
 		
 		page.navMenu.navigateTo(page.navMenu.loginLink);
