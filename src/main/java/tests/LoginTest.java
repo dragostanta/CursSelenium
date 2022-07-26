@@ -11,17 +11,17 @@ import utils.BaseTest;
 public class LoginTest extends BaseTest {
 
 	
-	//@Test(priority=0)
+	@Test(priority=0)
 	public void validLogin() throws InterruptedException {
 
 		page.navMenu.navigateTo(page.navMenu.loginLink);
 		page.loginPage.loginInApp("TestUser", "12345@67890");
-		assertTrue(page.loginPage.sucessloginMessage.isDisplayed());
+		assertTrue(page.loginPage.errorLoginMessage.isDisplayed());
 		page.loginPage.logoutFromApp();
 
 	}
 	
-	//@Test(priority =1)
+	@Test(priority =1)
 	public void invalidTest() {
 		
 		page.navMenu.navigateTo(page.navMenu.loginLink);

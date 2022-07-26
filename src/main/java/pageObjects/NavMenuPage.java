@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -23,11 +24,23 @@ public class NavMenuPage {
 	
 	@FindBy(linkText = "CONTACTS") public WebElement contactsLink;
 	//WebElement contactsLink = driver.findElement(By.linkText("CONTACTS"));
-	
-	
-	
+	@FindBy(linkText = "BLOG") public WebElement blogLink;
+	@FindBy(linkText = "Post Formats") public WebElement postFormatsLink;
+	@FindBy(linkText = "BOOKS") public WebElement shopLink;
+
 	public void navigateTo(WebElement element) {
 		element.click();
 	}
+	
+	public void hoverMenu(WebElement element) {
+		
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).perform();
+		
+	}
+	
+	
+	
+	
 	
 }
