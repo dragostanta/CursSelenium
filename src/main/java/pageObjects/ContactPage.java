@@ -1,5 +1,6 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +13,9 @@ public class ContactPage {
 	public ContactPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+
 	}
+	
 	
 	@FindBy(tagName = "iframe") public WebElement iframe;
 	@FindBy(xpath = "//button[@title='Zoom in']") public WebElement zoomIn;

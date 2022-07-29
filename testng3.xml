@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test-suite" >
+
+    <test name = "Login Test">
+    	<parameter name ="user" value = "TestUser"/>
+    	<parameter name ="pass" value = "12345@67890"/>
+    	
+        <classes>
+            <class name = "tests.LoginWithTestNgParameters" />
+        </classes>
+    </test>
+</suite>

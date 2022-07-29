@@ -23,6 +23,7 @@ public class LoginPage {
 	@FindBy(id="password") public WebElement passwordField;
 	@FindBy(xpath ="//input[@class='submit_button']") public WebElement submitButton;
 	@FindBy(xpath="//li[@class='menu_user_logout']") public WebElement logoutButton;
+	@FindBy(xpath = "//a[@class='popup_close']")public WebElement closePopUp;
 	
 	@FindBy(xpath="//div[contains(@class, 'sc_infobox_style_success')]") public WebElement sucessloginMessage;
 	@FindBy(xpath="//div[contains(@class, 'sc_infobox_style_error')]") public WebElement errorLoginMessage;
@@ -37,6 +38,14 @@ public class LoginPage {
 		WebDriverWait wait =  new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(logoutButton));
 		logoutButton.click();
+	}
+	
+	
+	public void closeLoginPopUp() {
+		usernameField.clear();
+		passwordField.clear();
+		closePopUp.click();
+		
 	}
 	
 }
