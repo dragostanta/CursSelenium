@@ -1,0 +1,26 @@
+21:19:59.691 [main] INFO  utils.Log - called method loginInAPP
+21:19:59.715 [main] INFO  utils.Log - Send keys with value TestUser
+21:20:01.029 [main] INFO  utils.Log - Send keys for pass with value 12345@67890
+21:20:05.321 [main] INFO  utils.Log - Clicked on submit button
+21:20:12.440 [main] INFO  utils.Log - Wait for logout button to be visible
+21:20:14.532 [main] INFO  utils.Log - Called logout button .click
+21:20:14.833 [main] INFO  utils.Log - called method loginInAPP
+21:20:14.833 [main] INFO  utils.Log - Send keys with value UserGresit
+21:20:15.881 [main] INFO  utils.Log - Send keys for pass with value parolaGresit
+21:20:16.228 [main] INFO  utils.Log - Clicked on submit button
+21:20:16.508 [main] INFO  utils.Log - Called clear method on usernameField
+21:20:16.960 [main] INFO  utils.Log - Called clear method on passwordField
+21:20:17.128 [main] INFO  utils.Log - Called click on closePopUp
+21:20:17.331 [main] INFO  utils.Log - called method loginInAPP
+21:20:17.332 [main] INFO  utils.Log - Send keys with value test.test
+21:20:17.727 [main] INFO  utils.Log - Send keys for pass with value test.test@123
+21:20:17.908 [main] INFO  utils.Log - Clicked on submit button
+21:20:22.916 [main] INFO  utils.Log - Wait for logout button to be visible
+21:20:24.870 [main] INFO  utils.Log - Called logout button .click
+21:20:25.496 [main] INFO  utils.Log - called method loginInAPP
+21:20:25.497 [main] INFO  utils.Log - Send keys with value userGresit123
+21:20:26.175 [main] INFO  utils.Log - Send keys for pass with value parolaGresita123
+21:20:26.505 [main] INFO  utils.Log - Clicked on submit button
+21:20:26.770 [main] INFO  utils.Log - Called clear method on usernameField
+21:20:27.162 [main] INFO  utils.Log - Called clear method on passwordField
+21:20:27.477 [main] INFO  utils.Log - Called click on closePopUp

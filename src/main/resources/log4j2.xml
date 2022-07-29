@@ -16,11 +16,11 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="log4j.rootLogger" level="trace">
+        <Logger name="log4j.rootLogger" level="info">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="fileLogger"/>
         </Logger>
-        <Root level="trace">
+        <Root level="info">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="fileLogger"/>
 

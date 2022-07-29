@@ -2,11 +2,13 @@ package tests;
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import utils.BaseTest;
+import utils.TestNgListener;
 
-
+@Listeners(TestNgListener.class)
 public class DataProviderLoginTest extends BaseTest{
 	
 	@DataProvider(name= "loginTestData")
